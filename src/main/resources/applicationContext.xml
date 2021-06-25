@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans>
+
+	<bean id="userController" class="com.eight.controller.UserController">
+		<property name="userService" ref="userService"></property>
+	</bean>
+
+	<!--实例-->
+	<!--<bean id="accountController" class="com.eight.controller.AccountController">
+		<property name="accountService" ref="accountService"></property>
+	</bean>
+
+	<bean id="accountService" class="com.eight.service.impl.AccountServiceImpl">
+		<property name="accountDao" ref="accountDao"></property>
+	</bean>
+	<bean id="accountDao" class="com.eight.dao.impl.AccountDaoImpl"></bean>
+
+	<bean id="userService" class="com.eight.service.impl.UserServiceImpl">
+		<property name="userDao" ref="userDao"></property>
+	</bean>
+	<bean id="userDao" class="com.eight.dao.impl.UserDaoImpl"></bean>-->
+
+</beans>
