@@ -6,6 +6,10 @@
 		<property name="userService" ref="userService"></property>
 	</bean>
 
+	<bean id="choosecontroller" class="com.eight.controller.choosecontroller">
+		<property name="chooseService" ref="chooseService"></property>
+	</bean>
+
 	<!--实例-->
 	<!--<bean id="accountController" class="com.eight.controller.AccountController">
 		<property name="accountService" ref="accountService"></property>

@@ -4,7 +4,18 @@
 
 <web-app>
   <display-name>Archetype Created Web Application</display-name>
-
+  <listener>
+    <listener-class>com.eight.mvc.ContextConfigListener</listener-class>
+  </listener>
+  <servlet>
+    <servlet-name>DispatcherServlet</servlet-name>
+    <servlet-class>com.eight.mvc.DispatcherServlet</servlet-class>
+    <load-on-startup>1</load-on-startup>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DispatcherServlet</servlet-name>
+    <url-pattern>*.do</url-pattern>
+  </servlet-mapping>
   <!--页面出现错误跳转-->
   <error-page>
     <error-code>500</error-code>

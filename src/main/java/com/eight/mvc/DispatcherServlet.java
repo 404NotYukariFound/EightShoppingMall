@@ -69,7 +69,7 @@ public class DispatcherServlet extends HttpServlet {
         try {
             String controllerClassName = controllerClass.getSimpleName();
             //把类名的开头设置为小写
-            controllerClassName = StringUtils.replaceChars(controllerClassName, controllerClassName.substring(0, 1),controllerClassName.substring(0, 1).toLowerCase());
+            controllerClassName = StringUtils.replaceChars(controllerClassName, controllerClassName.substring(0, 1), controllerClassName.substring(0, 1).toLowerCase());
             //BeanFactory.getInstance() 是BeanFactiory的实例化，类似于new
             obj = BeanFactory.getInstance().getBean(controllerClassName);
             // obj = controllerClass.newInstance();  类的实例
