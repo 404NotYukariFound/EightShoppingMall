@@ -34,6 +34,7 @@
             width: 100%;
             height: 100%;
             background: url("static/images/img_choose/book.jpg");
+            background-size: 100% 100%;
         }
 
         #furniture > input {
@@ -41,6 +42,7 @@
             width: 100%;
             height: 100%;
             background: url("static/images/img_choose/furniture.jpg");
+            background-size: 100% 100%;
         }
 
         #phone > input {
@@ -48,6 +50,7 @@
             width: 100%;
             height: 100%;
             background: url("static/images/img_choose/phone.jpg");
+            background-size: 100% 100%;
         }
 
         #book {
@@ -68,31 +71,28 @@
 <div id="total">
     <div id="book">
         <input name="book" type="button">
-        <%--        <img src="images/img_choose/book.jpg">--%>
     </div>
     <div id="furniture">
         <input name="furniture" type="button">
-        <%--        <img src="images/img_choose/furniture.jpg">--%>
     </div>
     <div id="phone">
         <input name="phone" type="button">
-        <%--        <img src="images/img_choose/phone.jpg">--%>
     </div>
 </div>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script>
-    $(function(){
-        $("input[name='book']").click(function(){
+    $(function () {
+        $("input[name='book']").click(function () {
             console.log('book');
-            window.location.href="/EightShoppingMall_war/webpage/toPage.do?pageName=book";//宿主对象
+            window.location.href = "/EightShoppingMall_war/webpage/toPage.do?pageName=book";//宿主对象
         })
-        $("input[name='furniture']").click(function(){
+        $("input[name='furniture']").click(function () {
             console.log('furniture');
-            window.location.href="toPage?pageName=furniture";//宿主对象
+            window.location.href = "toPage?pageName=furniture";//宿主对象
         })
-        $("input[name='phone']").click(function(){
+        $("input[name='phone']").click(function () {
             console.log('phone');
-            window.location.href="toPage?pageName=phone";//宿主对象
+            window.location.href = "toPage?pageName=phone";//宿主对象
         })
     })
 </script>
