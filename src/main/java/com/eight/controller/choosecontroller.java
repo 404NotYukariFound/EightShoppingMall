@@ -15,7 +15,7 @@ public class choosecontroller {
     IChooseDao chooseDao=new ChooseDaoImpl();
     @RequestMapping("webpage/toPage.do")
     public String ToPage(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        System.out.println("ToPageController");
         return chooseDao.ToPage(request,response);
-        //request.getRequestDispatcher("/webpage/commodityPage/"+pageName).forward(request,response);
     }
 }

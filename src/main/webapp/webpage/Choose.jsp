@@ -84,15 +84,15 @@
     $(function () {
         $("input[name='book']").click(function () {
             console.log('book');
-            window.location.href = "/EightShoppingMall_war/webpage/toPage.do?pageName=book";//宿主对象
+            window.location.href = "/EightShoppingMall/webpage/toPage.do?pageName=book";
         })
         $("input[name='furniture']").click(function () {
             console.log('furniture');
-            window.location.href = "toPage?pageName=furniture";//宿主对象
+            window.location.href = "/EightShoppingMall/webpage/toPage.do?pageName=furniture";
         })
         $("input[name='phone']").click(function () {
             console.log('phone');
-            window.location.href = "toPage?pageName=phone";//宿主对象
+            window.location.href = "/EightShoppingMall/webpage/toPage.do?pageName=phone";
         })
     })
 </script>
