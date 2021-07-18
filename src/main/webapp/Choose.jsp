@@ -29,11 +29,11 @@
             bottom: 10%;
         }
 
-        #book > input {
+        input[name="book"] {
             position: absolute;
             width: 100%;
             height: 100%;
-            background: url("static/images/img_choose/book.jpg");
+            background: url("webpage/static/images/img_choose/book.jpg");
             background-size: 100% 100%;
         }
 
@@ -41,7 +41,7 @@
             position: absolute;
             width: 100%;
             height: 100%;
-            background: url("static/images/img_choose/furniture.jpg");
+            background: url("webpage/static/images/img_choose/furniture.jpg");
             background-size: 100% 100%;
         }
 
@@ -49,7 +49,7 @@
             position: absolute;
             width: 100%;
             height: 100%;
-            background: url("static/images/img_choose/phone.jpg");
+            background: url("webpage/static/images/img_choose/phone.jpg");
             background-size: 100% 100%;
         }
 
@@ -83,16 +83,13 @@
 <script>
     $(function () {
         $("input[name='book']").click(function () {
-            console.log('book');
-            window.location.href = "/EightShoppingMall/webpage/toPage.do?pageName=book";
+            window.location.href = "/EightShoppingMall/toPage.do?pageName=book";
         })
         $("input[name='furniture']").click(function () {
-            console.log('furniture');
-            window.location.href = "/EightShoppingMall/webpage/toPage.do?pageName=furniture";
+            window.location.href = "/EightShoppingMall/toPage.do?pageName=furniture";
         })
         $("input[name='phone']").click(function () {
-            console.log('phone');
-            window.location.href = "/EightShoppingMall/webpage/toPage.do?pageName=phone";
+            window.location.href = "/EightShoppingMall/toPage.do?pageName=phone";
         })
     })
 </script>

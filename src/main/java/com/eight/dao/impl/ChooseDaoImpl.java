@@ -12,6 +12,6 @@ public class ChooseDaoImpl implements IChooseDao {
     @Override
     public String ToPage(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String pageName=request.getParameter("pageName");
-        return "redirect:"+"/webpage/view.do?pageName="+pageName;
+        return "redirect:"+"/view.do?pageName="+pageName;
     }
 }

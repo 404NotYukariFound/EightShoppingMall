@@ -28,6 +28,10 @@ public class SqlUtils {
         sql.trimToSize();
     }
 
+    public void Limit(){
+
+    }
+
     public String getSql() {
         return sql.toString();
     }

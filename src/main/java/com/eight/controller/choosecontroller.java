@@ -13,9 +13,8 @@ import java.io.IOException;
 @Controller
 public class choosecontroller {
     IChooseDao chooseDao=new ChooseDaoImpl();
-    @RequestMapping("webpage/toPage.do")
+    @RequestMapping("toPage.do")
     public String ToPage(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        System.out.println("ToPageController");
         return chooseDao.ToPage(request,response);
     }
 }
