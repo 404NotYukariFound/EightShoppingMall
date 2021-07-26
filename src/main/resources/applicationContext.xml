@@ -14,6 +14,10 @@
 		<property name="viewService" ref="viewService"></property>
 	</bean>
 
+	<bean id="redirectpagecontroller" class="com.eight.controller.redirectpagecontroller">
+		<property name="redirectpageService" ref="redirectpageService"></property>
+	</bean>
+
 	<!--实例-->
 	<!--<bean id="accountController" class="com.eight.controller.AccountController">
 		<property name="accountService" ref="accountService"></property>

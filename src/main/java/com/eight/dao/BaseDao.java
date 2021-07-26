@@ -14,7 +14,7 @@ import java.util.Map;
 
 public abstract class BaseDao {
 
-    private QueryRunner queryRunner = new QueryRunner();
+    private static QueryRunner queryRunner = new QueryRunner();
 
     /**
      * 执行 insert/update/delete方法
@@ -64,7 +64,7 @@ public abstract class BaseDao {
      * @return 返回集合，存有JavaBean的值
      */
 
-    public <T> List<T> queryForList(String sql, Class<T> type, Object... params){
+    public static  <T> List<T> queryForList(String sql, Class<T> type, Object... params){
         Connection conn = JdbcUtils.getConnection();
 
         try {
@@ -84,7 +84,7 @@ public abstract class BaseDao {
      * @param params 参数
      * @return 返回一个值
      */
-    public Object queryForSingleValue(String sql,Object... params){
+    public Object queryForSingleValue(String sql, Object... params){
         Connection conn = JdbcUtils.getConnection();
         try {
             return queryRunner.query(conn, sql, new ScalarHandler<>(),params);
